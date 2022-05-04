@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <title>My Phone Book</title>
+
+    <link rel = "stylesheet" href = "phoneBook.css">
+    <script src="https://kit.fontawesome.com/4c974060b2.js" crossorigin="anonymous"></script>
+    <script src = "phoneBook.js"></script>
+</head>
+<body>    
+    <h1 class = "firstTitle">  <i class="fa-solid fa-phone"></i> PhoneBook Web Application  <i class="fa-solid fa-phone"></i></h1>
+    <form class="search">
+        <label  for="fname"> Search by Name:</label><br>
+        <input type="text" id="fname" name="fname" value="insert here">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button><br>
+
+        <label  for="pnumber">Search by Phone Number:</label><br>
+        <input type="text" id="pnumber" name="pnumber" value="insert here">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button><br>
+    </form>
+     
+    
+    <p></p>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone No</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Marley</td>
+            <td>052-4546320</td>
+            <td>bob12345@gmail.com</td>
+            <td><button><i class="fa-solid fa-pen"></i></button> </td>
+            <td><button> <i class="fa-solid fa-trash-can"></i></button></td>
+        </tr>
+        <tr>
+            <td>jack</td>
+            <td>Johnson</td>
+            <td>054-5008900</td>
+            <td>jack0987@gmail.com</td>
+            <td><button><i class="fa-solid fa-pen"></i></button> </td>
+            <td><button> <i class="fa-solid fa-trash-can"></i></button></td>
+        </tr>
+        <tr>
+            <td>Gal</td>
+            <td>Levy</td>
+            <td>054-5065743</td>
+            <td>gal09345@gmail.com</td>
+            <td><button><i class="fa-solid fa-pen"></i></button> </td>
+            <td><button> <i class="fa-solid fa-trash-can"></i></button></td>
+        </tr>
+    </table>
+    <p></p>
+    <form class="sorter">
+        sort by:
+        <button onclick="sorter()">First Name</button>
+        <button>Last Name</button>
+        <button>Phone Number</button>
+    </form>
+
+    
+    <form class="addContact">
+        <p>Add new contact:</p>
+        <input type="text" name="fname" value="Insert first name">
+        <input type="text" name="lname" value="Insert last name">
+        <input type="text" name="Pnumber" value="Insert phone number">
+        <input type="text" name="email" value="Insert Email">
+        <button>Save <i class="fa-solid fa-check"></i></button><br>
+    </form>
+</body>
+</html>
